@@ -1,0 +1,19 @@
+I"Ð<h2 id="this-is-testing-for-powershell">This is testing for PowerShell</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">
+</span><span class="p">[</span><span class="n">ValidateSet</span><span class="p">(</span><span class="s2">"Yes"</span><span class="p">,</span><span class="s2">"No"</span><span class="p">)]</span><span class="nv">$x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Read-Host</span><span class="w"> </span><span class="s2">"Enter the one of the option you want to choose: YES/NO"</span><span class="w">
+</span><span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="nv">$x</span><span class="w"> </span><span class="o">-eq</span><span class="w"> </span><span class="s2">"YES"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">Write-Host</span><span class="w"> </span><span class="s2">"Powershell Profile loaded from </span><span class="si">$(</span><span class="nv">$profile</span><span class="si">)</span><span class="s2">"</span><span class="w"> </span><span class="nt">-ForegroundColor</span><span class="w"> </span><span class="nx">Cyan</span><span class="w"> </span><span class="nt">-BackgroundColor</span><span class="w"> </span><span class="nx">Green</span><span class="w">
+    </span><span class="nv">$host</span><span class="o">.</span><span class="nf">ui</span><span class="o">.</span><span class="nf">RawUI</span><span class="o">.</span><span class="nf">WindowTitle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Windows PowerShell </span><span class="nv">$hostversion</span><span class="s2"> is running with Profile loaded!! "</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="kr">elseif</span><span class="w"> </span><span class="p">(</span><span class="nv">$x</span><span class="w"> </span><span class="o">-eq</span><span class="w"> </span><span class="s2">"NO"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">powershell.exe</span><span class="w"> </span><span class="nt">-NoProfile</span><span class="w">
+    </span><span class="n">Write-Host</span><span class="w"> </span><span class="s2">"Powershell Profile not loaded from </span><span class="si">$(</span><span class="nv">$profile</span><span class="si">)</span><span class="s2">"</span><span class="w"> </span><span class="nt">-ForegroundColor</span><span class="w"> </span><span class="nx">Red</span><span class="w"> </span><span class="nt">-BackgroundColor</span><span class="w"> </span><span class="nx">Green</span><span class="w">
+    </span><span class="nv">$host</span><span class="o">.</span><span class="nf">ui</span><span class="o">.</span><span class="nf">RawUI</span><span class="o">.</span><span class="nf">WindowTitle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Windows PowerShell </span><span class="nv">$hostversion</span><span class="s2"> is running without Profile loaded!! "</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="kr">else</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">powershell</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div></div>
+:ET
