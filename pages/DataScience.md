@@ -1,18 +1,18 @@
 ---
 layout: page
 title: ""
-subtitle: "Automate tasks with PowerShell"
-# date: 2022-04-25 06:07:13 
-background: '/img/bg-PowerShell1.jpg'
-Categories: "PowerShell"
-permalink: /PowerShell/
+subtitle: "Data Science, Machine Learning, Python"
+# date: 2022-04-25 06:07:13
+background: "/img/DataScience.jpg"
+Categories: "DataScience"
+permalink: /DataScience/
 ---
 
-### PowerShell blog posts page
+### Data Science blog posts page
 
 <!-- Post List -->
 {% for post in site.posts limit : 5 %}
-{% if post.categories contains "PowerShell" %}
+{% if post.categories contains "DataScience" %}
 <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
     <h2 class="post-title">{{ post.title }}</h2>

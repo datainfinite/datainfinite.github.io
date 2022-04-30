@@ -15,7 +15,17 @@ header.masthead {
         height: 100%;
         width: 100%;
         background-color: $gray-900;
-        opacity: 0.5;
+        opacity: 0;
+    }
+
+    .overlay-bg-home {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $gray-900;
+        opacity: 0.555;
     }
 
     .page-heading,
@@ -45,6 +55,7 @@ header.masthead {
             display: block;
             margin: 10px 0 0;
             font-family: $headings-font-family;
+            color: #00c2cb;
         }
 
         @media only screen and (min-width: 768px) {

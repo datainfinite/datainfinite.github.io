@@ -1,18 +1,18 @@
 ---
 layout: page
 title: ""
-subtitle: "Automate tasks with PowerShell"
-# date: 2022-04-25 06:07:13 
-background: '/img/bg-PowerShell1.jpg'
-Categories: "PowerShell"
-permalink: /PowerShell/
+subtitle: "Excel, Word, PowerPoint"
+# date: 2022-04-25 06:07:13
+background: "/img/MSOffice_dark.png"
+Categories: "MSOffice"
+permalink: /MSOffice/
 ---
 
-### PowerShell blog posts page
+### MS Office blog posts page
 
 <!-- Post List -->
 {% for post in site.posts limit : 5 %}
-{% if post.categories contains "PowerShell" %}
+{% if post.categories contains "MSOffice" %}
 <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
     <h2 class="post-title">{{ post.title }}</h2>
