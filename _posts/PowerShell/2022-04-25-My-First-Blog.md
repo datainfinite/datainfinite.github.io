@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: midnight-post
 title: "Restrict PowerShell Profile with conditional load"
 subtitle: "Choose if you want to load the profile or not"
 # date: 2022-04-25 06:07:13
